@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ff206e;
+}
+
+/* navbar section */
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--main-color);
+}
+.navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+/*          HEADER SECTION        */
+#home {
+  background-image: url("DevFoli-Img/intro-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+}
+
+#home a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.icon:hover {
+  border-color: white;
+  transition: all 1s;
+}
+
+/*          about SECTION        */
+
+.section-header h2 {
+  font-size: 4rem;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  color: #f1f1df;
+}
+.section-header h3 {
+  font-size: 2rem;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  position: relative;
+}
+
+.section-header h3::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+#about .about-des{
+    color: var(--main-color);
+}
+
+
+/*          services SECTION        */
+
+
+.services {
+    margin-top: 2rem;
+    
+}
+
+
+.services h2{
+    font-size: 4rem;
+    letter-spacing: 20px;
+    color: #a0a096;
+
+}
+
+.services h3{
+    font-size: 2rem;
+    letter-spacing: 20px;
+    color: #ffffff;
+    top: 20px;
+    
+
+}
+
+
+.services h2::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: #ff206e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    
+
+}
+
+#services-card h3::after{
+    
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: #ff206e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all .7s;
+
+}
+
+#services-card .item:hover h3::after{
+  width: 70%;
+
+}
+#services-card .item:hover i {
+  color: var(--main-color);
+
+}
+
+#services-card .item i {
+  transition: all 1s;
+
+}
+
